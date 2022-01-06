@@ -1,0 +1,16 @@
+$ sudo apt update 
+$ sudo apt install software-properties-common
+$ sudo add-apt-repository ppa:deadsnakes/ppa 
+$ sudo apt update 
+$ sudo apt install python3.9 python3.9-venv
+$ python3.9 -m venv mp && source mp/bin/activate
+$ python -m pip install --upgrade pip
+$ pip install mediapipe
+Collecting mediapipe
+  Downloading mediapipe-0.8.6.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (32.2 MB)
+(mp) $ python
+>> import mediapipe
+>> print(mediapipe.__file__)
+>> print(mediapipe.solutions)
+>> exit()
+
